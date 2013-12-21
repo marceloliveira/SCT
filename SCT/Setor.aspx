@@ -4,7 +4,7 @@
     <h2><%: Title %></h2>
     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/NovoSetor.aspx">Novo Setor</asp:HyperLink>
     <br />
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing"
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnRowCancelingEdit="GridView1_RowCancelingEdit"
         DataKeyNames="codigo" ForeColor="#333333" GridLines="None" Width="300">
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
             <Columns>

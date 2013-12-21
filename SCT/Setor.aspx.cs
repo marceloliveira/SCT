@@ -47,8 +47,17 @@ namespace SCT
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
-            //int codigoClicado = (int)GridView1.DataKeys[e.RowIndex].Value;
-            //deleteField(codigoClicado);
+            GridView1.SelectRow(e.NewEditIndex);
+        }
+
+        protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            upDateGrid();
+        }
+
+        protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            
         }
     }
 }
